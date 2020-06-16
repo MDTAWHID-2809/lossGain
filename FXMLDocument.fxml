@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="pane" prefHeight="548.0" prefWidth="652.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="game.FXMLDocumentController">
+    <children>
+      <TextArea layoutX="26.0" layoutY="379.0" prefHeight="138.0" prefWidth="165.0" style="-fx-background-color: yellow;" />
+      <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <TextArea layoutX="160.0" layoutY="118.0" prefHeight="144.0" prefWidth="135.0" style="-fx-background-color: white;" />
+      <TextArea layoutX="307.0" layoutY="118.0" prefHeight="144.0" prefWidth="135.0" style="-fx-background-color: white;" />
+      <Button fx:id="bt3" layoutX="202.0" layoutY="208.0" mnemonicParsing="false" onAction="#redeemcoupon" prefHeight="48.0" prefWidth="52.0" style="-fx-background-color: green;" text="C" />
+      <Button fx:id="bt2" layoutX="243.0" layoutY="144.0" mnemonicParsing="false" onAction="#redeemcoupon" prefHeight="48.0" prefWidth="52.0" style="-fx-background-color: blue;" text="B" />
+      <Button fx:id="bt1" layoutX="160.0" layoutY="144.0" mnemonicParsing="false" onAction="#redeemcoupon" prefHeight="48.0" prefWidth="52.0" style="-fx-background-color: red;" text="A" />
+      <Button fx:id="bt4" layoutX="307.0" layoutY="144.0" mnemonicParsing="false" onAction="#redeemcoupon" prefHeight="48.0" prefWidth="52.0" style="-fx-background-color: yellow;" text="D" />
+      <Button fx:id="bt5" layoutX="390.0" layoutY="144.0" mnemonicParsing="false" onAction="#redeemcoupon" prefHeight="48.0" prefWidth="52.0" style="-fx-background-color: blue;" text="E" />
+      <Button fx:id="bt6" layoutX="349.0" layoutY="201.0" mnemonicParsing="false" onAction="#redeemcoupon" prefHeight="48.0" prefWidth="52.0" style="-fx-background-color: red;" text="F" />
+      <Label layoutX="214.0" layoutY="101.0" text="Player1" textFill="WHITE" />
+      <Label layoutX="356.0" layoutY="101.0" text="Player2" textFill="WHITE" />
+      <Label fx:id="remain1" layoutX="196.0" layoutY="270.0" text="remain" textFill="WHITE" />
+      <Label fx:id="remain2" layoutX="341.0" layoutY="270.0" text="remain" textFill="WHITE" />
+      <Label fx:id="label1" layoutX="250.0" layoutY="270.0" text="7" textFill="WHITE" />
+      <Label fx:id="label2" layoutX="387.0" layoutY="270.0" text="7" textFill="WHITE" />
+      <Label alignment="CENTER" layoutX="117.0" layoutY="50.0" prefHeight="27.0" prefWidth="380.0" style="-fx-background-color: white;" text="                                LEADERBOARD                              ">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="117.0" layoutY="25.0" style="-fx-background-color: white;" text="PLAYER 1:">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="421.0" layoutY="25.0" style="-fx-background-color: white;" text="PLAYER 2:">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="score1" layoutX="148.0" layoutY="55.0" style="-fx-background-color: white;" text="0" />
+      <Label fx:id="score2" layoutX="452.0" layoutY="55.0" style="-fx-background-color: white;" text="0" />
+      <Label fx:id="win" alignment="CENTER" layoutX="232.0" layoutY="13.0" prefHeight="25.0" prefWidth="157.0" style="-fx-background-color: white;" text="Who Win??" textFill="#000fff">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="26.0" layoutY="379.0" prefHeight="25.0" prefWidth="165.0" style="-fx-background-color: gray;" />
+      <Label fx:id="yournum1" alignment="CENTER" layoutX="34.0" layoutY="385.0" prefHeight="17.0" prefWidth="29.0" style="-fx-background-color: yellow;" />
+      <Label fx:id="yournum2" alignment="CENTER" layoutX="72.0" layoutY="385.0" prefHeight="17.0" prefWidth="29.0" style="-fx-background-color: yellow;" />
+      <Label fx:id="yournum3" alignment="CENTER" layoutX="112.0" layoutY="385.0" prefHeight="17.0" prefWidth="29.0" style="-fx-background-color: yellow;" />
+      <Label fx:id="yournum4" alignment="CENTER" layoutX="155.0" layoutY="385.0" prefHeight="17.0" prefWidth="29.0" style="-fx-background-color: yellow;" />
+      <Button fx:id="b1" layoutX="34.0" layoutY="413.0" mnemonicParsing="false" onAction="#fix" prefHeight="17.0" prefWidth="29.0" style="-fx-background-color: black;" textFill="WHITE" />
+      <Button fx:id="b5" layoutX="34.0" layoutY="448.0" mnemonicParsing="false" onAction="#fix" prefHeight="17.0" prefWidth="29.0" style="-fx-background-color: black;" textFill="WHITE" />
+      <Button fx:id="b6" layoutX="72.0" layoutY="448.0" mnemonicParsing="false" onAction="#fix" prefHeight="17.0" prefWidth="29.0" style="-fx-background-color: black;" textFill="WHITE" />
+      <Button fx:id="b2" layoutX="72.0" layoutY="413.0" mnemonicParsing="false" onAction="#fix" prefHeight="17.0" prefWidth="29.0" style="-fx-background-color: black;" textFill="WHITE" />
+      <Button fx:id="b3" layoutX="112.0" layoutY="413.0" mnemonicParsing="false" onAction="#fix" prefHeight="17.0" prefWidth="29.0" style="-fx-background-color: black;" textFill="WHITE" />
+      <Button fx:id="b4" layoutX="155.0" layoutY="413.0" mnemonicParsing="false" onAction="#fix" prefHeight="17.0" prefWidth="29.0" style="-fx-background-color: black;" textFill="WHITE" />
+      <Button fx:id="b9" layoutX="34.0" layoutY="483.0" mnemonicParsing="false" onAction="#fix" prefHeight="17.0" prefWidth="29.0" style="-fx-background-color: black;" textFill="WHITE" />
+      <Button fx:id="b10" layoutX="72.0" layoutY="483.0" mnemonicParsing="false" onAction="#fix" prefHeight="17.0" prefWidth="29.0" style="-fx-background-color: black;" textFill="WHITE" />
+      <Button fx:id="b11" layoutX="112.0" layoutY="483.0" mnemonicParsing="false" onAction="#fix" prefHeight="17.0" prefWidth="29.0" style="-fx-background-color: black;" textFill="WHITE" />
+      <Button fx:id="b12" layoutX="155.0" layoutY="483.0" mnemonicParsing="false" onAction="#fix" prefHeight="17.0" prefWidth="29.0" style="-fx-background-color: black;" textFill="WHITE" />
+      <Button fx:id="b7" layoutX="112.0" layoutY="448.0" mnemonicParsing="false" onAction="#fix" prefHeight="17.0" prefWidth="29.0" style="-fx-background-color: black;" textFill="WHITE" />
+      <Button fx:id="b8" layoutX="155.0" layoutY="448.0" mnemonicParsing="false" onAction="#fix" prefHeight="17.0" prefWidth="29.0" style="-fx-background-color: black;" textFill="WHITE" />
+      <Button fx:id="lotto" layoutX="70.0" layoutY="347.0" mnemonicParsing="false" onAction="#playlotto" text="Buy A Lotto" />
+      <Label fx:id="Activeplayer" alignment="CENTER" layoutX="219.0" layoutY="298.0" prefHeight="27.0" prefWidth="157.0" style="-fx-background-color: Green;" textFill="#fff000">
+         <font>
+            <Font name="Book Antiqua Bold" size="20.0" />
+         </font>
+      </Label>
+      <ColorPicker fx:id="picker" layoutX="509.0" layoutY="13.0" style="-fx-background-color: yellow;" />
+      <Button fx:id="set" layoutX="524.0" layoutY="42.0" mnemonicParsing="false" onAction="#setcolor" prefHeight="25.0" prefWidth="96.0" style="-fx-background-color: red;" text="Set Bacground" />
+      <Label fx:id="match" alignment="CENTER" layoutX="60.0" layoutY="517.0" prefHeight="25.0" prefWidth="96.0" style="-fx-background-color: blue;" textFill="WHITE" />
+      <Button layoutX="275.0" layoutY="266.0" mnemonicParsing="false" onAction="#resetgame" style="-fx-background-color: red;" text="Reset" />
+      <Button fx:id="bt" layoutX="442.0" layoutY="335.0" mnemonicParsing="false" onAction="#whoisplaying" text="Reveal" />
+      <HBox fx:id="hbox" layoutX="391.0" layoutY="362.0" prefHeight="35.0" prefWidth="248.0" style="-fx-background-color: white;" />
+      <Button layoutX="395.0" layoutY="400.0" mnemonicParsing="false" onAction="#setlavelword" prefHeight="25.0" prefWidth="29.0" text="A" />
+      <Button layoutX="428.0" layoutY="400.0" mnemonicParsing="false" onAction="#setlavelword" prefHeight="25.0" prefWidth="29.0" text="B" />
+      <Button layoutX="467.0" layoutY="400.0" mnemonicParsing="false" onAction="#setlavelword" prefHeight="25.0" prefWidth="29.0" text="C" />
+      <Button layoutX="503.0" layoutY="401.0" mnemonicParsing="false" onAction="#setlavelword" prefHeight="25.0" prefWidth="29.0" text="D" />
+      <Button layoutX="605.0" layoutY="400.0" mnemonicParsing="false" onAction="#setlavelword" prefHeight="25.0" prefWidth="29.0" text="G" />
+      <Button layoutX="539.0" layoutY="509.0" mnemonicParsing="false" onAction="#setlavelword" prefHeight="25.0" prefWidth="29.0" text="Y" />
+      <Button layoutX="503.0" layoutY="509.0" mnemonicParsing="false" onAction="#setlavelword" prefHeight="25.0" prefWidth="29.0" text="X" />
+      <Button layoutX="467.0" layoutY="509.0" mnemonicParsing="false" onAction="#setlavelword" prefHeight="25.0" prefWidth="29.0" text="W" />
+      <Button layoutX="428.0" layoutY="509.0" mnemonicParsing="false" onAction="#setlavelword" prefHeight="25.0" prefWidth="29.0" text="V" />
+      <Button layoutX="606.0" layoutY="471.0" mnemonicParsing="false" onAction="#setlavelword" prefHeight="25.0" prefWidth="29.0" text="U" />
+      <Button layoutX="572.0" layoutY="471.0" mnemonicParsing="false" onAction="#setlavelword" prefHeight="25.0" prefWidth="29.0" text="T" />
+      <Button layoutX="428.0" layoutY="470.0" mnemonicParsing="false" onAction="#setlavelword" prefHeight="25.0" prefWidth="29.0" text="P" />
+      <Button layoutX="395.0" layoutY="471.0" mnemonicParsing="false" onAction="#setlavelword" prefHeight="25.0" prefWidth="29.0" text="O" />
+      <Button layoutX="605.0" layoutY="436.0" mnemonicParsing="false" onAction="#setlavelword" prefHeight="25.0" prefWidth="29.0" text="N" />
+      <Button layoutX="467.0" layoutY="471.0" mnemonicParsing="false" onAction="#setlavelword" prefHeight="25.0" prefWidth="29.0" text="Q" />
+      <Button layoutX="572.0" layoutY="509.0" mnemonicParsing="false" onAction="#setlavelword" prefHeight="25.0" prefWidth="29.0" text="Z" />
+      <Button layoutX="539.0" layoutY="471.0" mnemonicParsing="false" onAction="#setlavelword" prefHeight="25.0" prefWidth="29.0" text="S" />
+      <Button layoutX="395.0" layoutY="436.0" mnemonicParsing="false" onAction="#setlavelword" prefHeight="25.0" prefWidth="29.0" text="H" />
+      <Button layoutX="428.0" layoutY="436.0" mnemonicParsing="false" onAction="#setlavelword" prefHeight="25.0" prefWidth="29.0" text="I" />
+      <Button layoutX="467.0" layoutY="436.0" mnemonicParsing="false" onAction="#setlavelword" prefHeight="25.0" prefWidth="29.0" text="J" />
+      <Button layoutX="503.0" layoutY="436.0" mnemonicParsing="false" onAction="#setlavelword" prefHeight="25.0" prefWidth="29.0" text="K" />
+      <Button layoutX="539.0" layoutY="436.0" mnemonicParsing="false" onAction="#setlavelword" prefHeight="25.0" prefWidth="29.0" text="L" />
+      <Button layoutX="572.0" layoutY="436.0" mnemonicParsing="false" onAction="#setlavelword" prefHeight="25.0" prefWidth="29.0" text="M" />
+      <Button layoutX="572.0" layoutY="400.0" mnemonicParsing="false" onAction="#setlavelword" prefHeight="25.0" prefWidth="29.0" text="F" />
+      <Button layoutX="539.0" layoutY="401.0" mnemonicParsing="false" onAction="#setlavelword" prefHeight="25.0" prefWidth="29.0" text="E" />
+      <Button layoutX="503.0" layoutY="470.0" mnemonicParsing="false" onAction="#setlavelword" prefHeight="25.0" prefWidth="29.0" text="R" />
+      <Label fx:id="result" layoutX="554.0" layoutY="275.0" prefHeight="25.0" prefWidth="76.0" style="-fx-background-color: white;" />
+      <Button layoutX="528.0" layoutY="335.0" mnemonicParsing="false" onAction="#checkMatchWord" text="cheek" />
+    </children>
+</AnchorPane>
